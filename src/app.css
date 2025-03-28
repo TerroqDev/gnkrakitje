@@ -1,2 +1,8 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme {
+    --color-primary: #FFF200;
+    --color-text: #010104;
+    --color-accent: #F392C5;
+}
