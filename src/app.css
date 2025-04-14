@@ -5,5 +5,14 @@
     --color-primary: #FFF200;
     --color-text: #010104;
     --color-accent: #F392C5;
-    --font-conthrax: Conthrax, sans
+
+    --font-conthraxx: "Conthraxx", "sans-serif";
+}
+
+@font-face {
+  font-family: 'Conthraxx';
+  src: url('/fonts/conthrax.woff') format('woff'),
+        url('/fonts/conthrax.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

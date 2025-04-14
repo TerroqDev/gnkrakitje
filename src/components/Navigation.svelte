@@ -21,7 +21,7 @@
         "kontakt"
     ]
 </script>
-<nav class="px-4 md:px-16 border-b border-accent font-conthrax">
+<nav class="px-4 md:px-16 border-b border-accent font-conthraxx">
       <div class="flex items-center justify-between w-full">
         <a href="/" class="text-primary px-4 min-w-24 text-lg z-20" on:click={() => isMenuOpen=false}>
             <img class="max-h-12 full" src="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnk%20tigar%20sveta%20nedelja_logo.pdf-image-001-dTebxHxyBMMVrUSU11ViJlgGeHYfpf.png" alt="Logo" /> 
