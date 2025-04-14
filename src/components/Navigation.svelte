@@ -71,7 +71,7 @@
       >
         <ul class="flex flex-col w-5/6 justify-center align-middle text-center text-gray-50 z-50">
             {#each navItems as item }
-              <li class="text-3xl font-bold border-r-4 border-primary uppercase tracking-widest my-2 py-2 px-4 w-full flex ">
+              <li class="text-3xl font-bold border-r-6 border-primary uppercase tracking-widest my-2 py-2 px-4 w-full flex ">
                 <a on:click={() => isMenuOpen = false}
                   href="/{item}"
                 >{item}
