@@ -21,9 +21,9 @@
         "kontakt"
     ]
 </script>
-<nav class="px-4 md:px-16 border-b border-accent">
+<nav class="px-4 md:px-16 border-b border-accent font-conthrax">
       <div class="flex items-center justify-between w-full">
-        <a href="/" class="text-primary px-4 min-w-24 text-xl z-20" on:click={() => isMenuOpen=false}>
+        <a href="/" class="text-primary px-4 min-w-24 text-lg z-20" on:click={() => isMenuOpen=false}>
             <img class="max-h-12 full" src="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnk%20tigar%20sveta%20nedelja_logo.pdf-image-001-dTebxHxyBMMVrUSU11ViJlgGeHYfpf.png" alt="Logo" /> 
         </a>
         <div class="text-text uppercase tracking-widest hidden md:max-[4200px]:block md:text-md z-20">
@@ -71,7 +71,7 @@
       >
         <ul class="flex flex-col w-5/6 justify-center align-middle text-center text-gray-50 z-50">
             {#each navItems as item }
-              <li class="text-3xl font-bold border-r-6 border-primary uppercase tracking-widest my-2 py-2 px-4 w-full flex ">
+              <li class="text-2xl font-bold border-r-6 border-primary uppercase tracking-widest my-2 py-2 px-4 w-full flex ">
                 <a on:click={() => isMenuOpen = false}
                   href="/{item}"
                 >{item}
