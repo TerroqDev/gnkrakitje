@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --color-primary: #FFF200;
-    --color-text: #010104;
-    --color-accent: #F392C5;
-
-    --font-conthrax: "Conthrax", "sans-serif";
+	--color-primary: #fff200;
+	--color-text: #010104;
+	--color-accent: #f392c5;
+	--font-conthrax: 'Conthrax', 'sans-serif';
+	--font-roboto: 'Roboto', 'sans-serif';
 }
 
 @font-face {
-  font-family: 'Conthrax';
-  src: url('/fonts/conthrax.woff') format('woff'),
-        url('/fonts/conthrax.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Conthrax';
+	src:
+		url('/fonts/conthrax.woff') format('woff'),
+		url('/fonts/conthrax.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .noscroll {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }

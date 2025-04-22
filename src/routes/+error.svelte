@@ -1,10 +1,10 @@
- <script>
-    import { onMount } from 'svelte';
-    import { goto } from '$app/navigation';
+<script>
+	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
-    onMount(() => {
-        goto('/');
-    });
+	onMount(() => {
+		goto('/');
+	});
 </script>
 
 <h1>Redirecting...</h1>
