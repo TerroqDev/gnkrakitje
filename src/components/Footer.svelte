@@ -29,7 +29,7 @@
 		</div>
 	</div>
 	<div class="my-2 h-px w-full bg-gray-500 md:my-16"></div>
-	<div class="grid grid-cols-1 justify-center pt-8 pb-4 md:grid-cols-3">
+	<div class="grid grid-cols-1 justify-center pt-8 pb-4 md:pb-8 md:grid-cols-3">
 		<div class="flex flex-col justify-center gap-2">
 			<h1
 				class="border-primary font-roboto h-auto w-full border-l-4 py-px pl-1 font-bold uppercase"
