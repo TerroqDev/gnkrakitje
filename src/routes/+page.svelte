@@ -10,7 +10,7 @@
 			<span
 				class="pointer-events-none px-4 text-center text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none"
 			>
-				GNK TIGAR RAKITJE
+				GNK TIGAR SVETA NEDJELJA
 			</span>
 		</div>
 		<div
@@ -30,7 +30,7 @@
 						alt="Tigar Rakitje"
 					/>
 					<div>
-						<h2 class="text-text text-center font-bold md:text-xl">GNK TIGAR RAKITJE</h2>
+						<h2 class="text-text text-center font-bold md:text-xl">GNK TIGAR SVETA NEDJELJA</h2>
 					</div>
 				</div>
 				<div class="flex flex-col items-center justify-center">
@@ -42,7 +42,7 @@
 					<h2 class="text-text text-center font-bold md:text-xl">GNK DINAMO</h2>
 				</div>
 			</div>
-			<div class="flex justify-center pt-6">
+			<div class="z-30 flex justify-center pt-6">
 				<Button />
 			</div>
 		</div>
@@ -73,10 +73,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="pt-8 md:px-48 md:pt-16">
+	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
 		<LeagueTable />
 	</div>
-	<div class="flex flex-col gap-4 pt-8 md:flex-row">
+	<div class="3xl:px-94 flex flex-col gap-4 pt-8 pb-4 md:flex-row md:px-44">
 		<div class="h-full flex-1">
 			<NewsCard
 				name="GNK Tigar Sveta Nedelja vs NK Bistra"
@@ -96,7 +96,7 @@
 		<div class="h-full flex-1">
 			<NewsCard
 				name="GNK Tigar Sveta Nedelja vs NK Samobor"
-				imageUrl="https://nk-slaven-belupo.hr/cache/mod_bt_contentslider/69fa39a3b239e8c7a6a07f5730972efa-170425_kadeti_pioniri_16.webp"
+				imageUrl="https://dinamo.blob.core.windows.net/dinamo/IMG_6276_85aa0c5b-66c0-40bf-9458-8d20bbd8bf66_800x533.jpeg"
 				tag="Najava"
 				date="22.04.2025."
 			/>

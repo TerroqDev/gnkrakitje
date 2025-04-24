@@ -8,6 +8,7 @@
 	--color-accent: #f392c5;
 	--font-conthrax: 'Conthrax', 'sans-serif';
 	--font-roboto: 'Roboto', 'sans-serif';
+	--breakpoint-3xl: 100rem;
 }
 
 @font-face {
