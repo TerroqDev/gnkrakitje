@@ -76,7 +76,7 @@
 	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
 		<LeagueTable />
 	</div>
-	<div class="3xl:px-94 flex flex-col gap-4 pt-8 pb-4 md:flex-row md:px-44">
+	<div class="3xl:px-98 flex flex-col gap-4 pt-8 pb-8 md:flex-row md:px-48 md:pb-16">
 		<div class="h-full flex-1">
 			<NewsCard
 				name="GNK Tigar Sveta Nedelja vs NK Bistra"

@@ -29,7 +29,7 @@
 		</div>
 	</div>
 	<div class="my-2 h-px w-full bg-gray-500 md:my-16"></div>
-	<div class="grid grid-cols-1 justify-center pt-8 pb-4 md:pb-8 md:grid-cols-3">
+	<div class="grid grid-cols-1 justify-center pt-8 pb-4 md:grid-cols-3 md:pb-16">
 		<div class="flex flex-col justify-center gap-2">
 			<h1
 				class="border-primary font-roboto h-auto w-full border-l-4 py-px pl-1 font-bold uppercase"
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex md:justify-center">
+		<div class="flex pt-4 md:justify-center md:pt-0">
 			<div class="flex h-20 w-32 md:h-40 md:w-64 md:items-center md:justify-center">
 				<img
 					class="max-h-full max-w-full object-contain"
@@ -91,7 +91,7 @@
 				/>
 			</div>
 		</div>
-		<ul class="flex flex-col justify-center pt-4 md:gap-2 md:pt-0 md:text-right">
+		<ul class="flex flex-col justify-center pt-10 md:gap-2 md:pt-0 md:text-right">
 			{#each navItems as item}
 				<li class="font-conthrax text-xs uppercase">
 					<a href="/{item}" class="hover:text-gray-100">{item}</a>
