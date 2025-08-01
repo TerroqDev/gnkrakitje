@@ -2,9 +2,16 @@
 	import NewsCard from '../components/NewsCard.svelte';
 	import Button from '../components/Button.svelte';
 	import LeagueTable from '../components/LeagueTable.svelte';
+	import type { PageProps } from './$types';
+    import type { Standings } from "../types/standings";
+
+	let { data }: PageProps = $props();
+    const standing = data.standingsResult;
+
+    console.log(data.nextMatchResult.events[0])
 </script>
 
-<div class="flex min-h-screen flex-col">
+<div class="font-roboto flex min-h-screen flex-col">
 	<div class="relative w-full overflow-hidden pb-8 md:pb-16">
 		<div class="absolute inset-0 flex items-center justify-center">
 			<span
@@ -43,7 +50,7 @@
 				</div>
 			</div>
 			<div class="z-30 flex justify-center pt-6">
-				<Button />
+				<Button>KUPI ULAZNICU</Button>
 			</div>
 		</div>
 	</div>
@@ -74,9 +81,9 @@
 		</div>
 	</div>
 	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
-		<LeagueTable />
+		<LeagueTable leagueTableData={standing} />
 	</div>
-	<div class="3xl:px-98 flex flex-col gap-4 pt-8 pb-8 md:flex-row md:px-48 md:pb-16">
+	<div class="3xl:px-98 flex flex-col gap-4 px-4 pt-8 pb-8 md:flex-row md:px-48 md:pb-16">
 		<div class="h-full flex-1">
 			<NewsCard
 				name="GNK Tigar Sveta Nedelja vs NK Bistra"
@@ -102,4 +109,21 @@
 			/>
 		</div>
 	</div>
+</div>
+<div class="flex flex-col md:flex-row gap-2">
+    <div class="flex flex-col w-full justify-center align-middle md:px-4">
+        <h1 class="text-3xl font-conthrax text-yellow-300">GNK SVETA NEDJELJA</h1>
+        <h1 class="text-5xl text-center font-conthrax">AKADEMIJA</h1>
+        <div class="pt-4 font-roboto px-4 text-gray-600">
+            <p>
+                GNK Sveta Nedjelja ponosno razvija mlade nogometne talente kroz stručno vođene treninge, sportsku disciplinu i timski duh. Naša akademija okuplja djecu svih uzrasta i pruža im priliku za igru, razvoj i natjecanje u zdravom sportskom okruženju. Pridruži se i ti – zajedno gradimo budućnost nogometa!
+            </p>
+            <div class="pt-8 flex justify-center">
+                <Button>SAZNAJ VISE</Button>
+            </div>
+        </div>
+    </div>
+    <div class="w-full">
+        <img src="https://gnkdinamo.hr/build/images/homepage-school.jpg" alt="Nogometna akademija" />
+    </div>
 </div>

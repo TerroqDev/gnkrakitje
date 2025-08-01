@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { browser } from '$app/environment';
-
+	import type { NavItems } from '../types/navitems';
 	$: if (browser) document.body.classList.toggle('noscroll', isMenuOpen);
 	$: href = $page.url.pathname;
 
@@ -11,10 +11,17 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
-	const navItems = ['vijesti', 'momcad', 'info', 'o klubu', 'natjecanje', 'akademija', 'kontakt'];
+	const navItems: NavItems[] = [
+		{ name: 'vijesti', link: 'vijesti' },
+		{ name: 'momcad', link: 'momcad' },
+		{ name: 'o klubu', link: 'o_klubu' },
+		{ name: 'natjecanje', link: 'natjecanje' },
+		{ name: 'akademija', link: 'akademija' },
+		{ name: 'kontakt', link: 'kontakt' }
+	];
 </script>
 
-<nav class="border-accent font-conthrax border-b px-4 md:px-16">
+<nav class="font-conthrax border-b border-yellow-400 px-4 md:px-16">
 	<div class="flex w-full items-center justify-between">
 		<a
 			href="/"
@@ -32,10 +39,10 @@
 				{#each navItems as item}
 					<li class="px-2 py-6">
 						<a
-							href="/{item}"
+							href="/{item.link}"
 							class={`transition-all duration-300 ease-in hover:text-gray-700 ${
-								href.includes(item) ? 'text-primary' : ''
-							}`}>{item}</a
+								href.includes(item.name) ? 'underline' : ''
+							}`}>{item.name}</a
 						>
 					</li>
 				{/each}
@@ -77,7 +84,7 @@
 				<li
 					class="border-primary my-2 flex w-full border-r-6 px-4 py-2 text-2xl font-bold tracking-widest uppercase"
 				>
-					<a on:click={() => (isMenuOpen = false)} href="/{item}">{item} </a>
+					<a on:click={() => (isMenuOpen = false)} href="/{item.link}">{item.name} </a>
 				</li>
 			{/each}
 		</ul>

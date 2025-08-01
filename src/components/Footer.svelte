@@ -1,5 +1,14 @@
 <script lang="ts">
-	const navItems = ['vijesti', 'momcad', 'info', 'o klubu', 'natjecanje', 'akademija', 'kontakt'];
+	import type { NavItems } from '../types/navitems';
+
+	const navItems: NavItems[] = [
+		{ name: 'vijesti', link: 'vijesti' },
+		{ name: 'momcad', link: 'momcad' },
+		{ name: 'o klubu', link: 'o_klubu' },
+		{ name: 'natjecanje', link: 'natjecanje' },
+		{ name: 'akademija', link: 'akademija' },
+		{ name: 'kontakt', link: 'kontakt' }
+	];
 </script>
 
 <div class="3xl:px-98 bg-gray-900 px-4 text-gray-50 md:px-48">
@@ -94,7 +103,7 @@
 		<ul class="flex flex-col justify-center pt-10 md:gap-2 md:pt-0 md:text-right">
 			{#each navItems as item}
 				<li class="font-conthrax text-xs uppercase">
-					<a href="/{item}" class="hover:text-gray-100">{item}</a>
+					<a href="/{item.link}" class="hover:text-gray-100">{item.name}</a>
 				</li>
 			{/each}
 		</ul>
