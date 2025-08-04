@@ -1,16 +1,16 @@
 <script lang="ts">
-    import type { Standings } from "../types/standings";
-    export let leagueTableData: Standings;
-    const tableData = leagueTableData.standings.flatMap(standing =>
-        standing.rows.map(row => ({
-            name: row.team.name,
-            games: row.matches,
-            wins: row.wins,
-            losses: row.losses,
-            goals: `${row.scoresFor}:${row.scoresAgainst}`,
-            points: row.points
-        }))
-    );
+	import type { Standings } from "../types/standings";
+	export let leagueTableData: Standings;
+	const tableData = leagueTableData.standings.flatMap((standing) =>
+		standing.rows.map((row) => ({
+			name: row.team.name,
+			games: row.matches,
+			wins: row.wins,
+			losses: row.losses,
+			goals: `${row.scoresFor}:${row.scoresAgainst}`,
+			points: row.points
+		}))
+	);
 </script>
 
 <div class="font-roboto bg-gray-900">
@@ -62,7 +62,7 @@
 			</thead>
 			<tbody class="pt-8">
 				{#each tableData as tdata, index}
-					<tr class={`${tdata.name ==="GNK Tigar Sveta Nedelja" ? "text-primary": ""}`}>
+					<tr class={`${tdata.name === "GNK Tigar Sveta Nedelja" ? "text-primary" : ""}`}>
 						<td class="px-2">
 							<p class="font-thin">
 								{index + 1}.

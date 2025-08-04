@@ -1,13 +1,13 @@
 <script lang="ts">
-	import type { NavItems } from '../types/navitems';
+	import type { NavItems } from "../types/navitems";
 
 	const navItems: NavItems[] = [
-		{ name: 'vijesti', link: 'vijesti' },
-		{ name: 'momcad', link: 'momcad' },
-		{ name: 'o klubu', link: 'o_klubu' },
-		{ name: 'natjecanje', link: 'natjecanje' },
-		{ name: 'akademija', link: 'akademija' },
-		{ name: 'kontakt', link: 'kontakt' }
+		{ name: "vijesti", link: "vijesti" },
+		{ name: "momcad", link: "momcad" },
+		{ name: "o klubu", link: "o_klubu" },
+		{ name: "natjecanje", link: "natjecanje" },
+		{ name: "akademija", link: "akademija" },
+		{ name: "kontakt", link: "kontakt" }
 	];
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import NewsCard from '../../components/NewsCard.svelte';
+	import NewsCard from "../../components/NewsCard.svelte";
 </script>
 
 <div class="3xl:px-98 flex h-full min-h-svh flex-col px-4 md:px-48">

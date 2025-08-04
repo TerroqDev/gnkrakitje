@@ -1,14 +1,16 @@
 <script lang="ts">
-	import NewsCard from '../components/NewsCard.svelte';
-	import Button from '../components/Button.svelte';
-	import LeagueTable from '../components/LeagueTable.svelte';
-	import type { PageProps } from './$types';
-    import type { Standings } from "../types/standings";
+	import NewsCard from "../components/NewsCard.svelte";
+	import Button from "../components/Button.svelte";
+	import LeagueTable from "../components/LeagueTable.svelte";
+	import { onMount } from "svelte";
+	import LoadingSpinner from "../components/LoadingSpinner.svelte";
 
-	let { data }: PageProps = $props();
-    const standing = data.standingsResult;
+	let leagueData: any = null;
 
-    console.log(data.nextMatchResult.events[0])
+	onMount(async () => {
+		const data = await fetch("/api/table");
+		leagueData = await data.json();
+	});
 </script>
 
 <div class="font-roboto flex min-h-screen flex-col">
@@ -81,7 +83,13 @@
 		</div>
 	</div>
 	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
-		<LeagueTable leagueTableData={standing} />
+		{#if leagueData}
+			<LeagueTable leagueTableData={leagueData} />
+		{:else}
+			<div class="flex justify-center">
+				<LoadingSpinner />
+			</div>
+		{/if}
 	</div>
 	<div class="3xl:px-98 flex flex-col gap-4 px-4 pt-8 pb-8 md:flex-row md:px-48 md:pb-16">
 		<div class="h-full flex-1">
@@ -110,20 +118,23 @@
 		</div>
 	</div>
 </div>
-<div class="flex flex-col md:flex-row gap-2">
-    <div class="flex flex-col w-full justify-center align-middle md:px-4">
-        <h1 class="text-3xl font-conthrax text-yellow-300">GNK SVETA NEDJELJA</h1>
-        <h1 class="text-5xl text-center font-conthrax">AKADEMIJA</h1>
-        <div class="pt-4 font-roboto px-4 text-gray-600">
-            <p>
-                GNK Sveta Nedjelja ponosno razvija mlade nogometne talente kroz stručno vođene treninge, sportsku disciplinu i timski duh. Naša akademija okuplja djecu svih uzrasta i pruža im priliku za igru, razvoj i natjecanje u zdravom sportskom okruženju. Pridruži se i ti – zajedno gradimo budućnost nogometa!
-            </p>
-            <div class="pt-8 flex justify-center">
-                <Button>SAZNAJ VISE</Button>
-            </div>
-        </div>
-    </div>
-    <div class="w-full">
-        <img src="https://gnkdinamo.hr/build/images/homepage-school.jpg" alt="Nogometna akademija" />
-    </div>
+<div class="flex flex-col gap-2 md:flex-row">
+	<div class="flex w-full flex-col justify-center align-middle md:px-4">
+		<h1 class="font-conthrax px-4 text-2xl text-yellow-300 md:text-3xl">GNK SVETA NEDJELJA</h1>
+		<h1 class="font-conthrax text-center text-4xl md:text-5xl">AKADEMIJA</h1>
+		<div class="font-roboto px-4 pt-4 text-gray-600">
+			<p>
+				GNK Sveta Nedjelja ponosno razvija mlade nogometne talente kroz stručno vođene treninge,
+				sportsku disciplinu i timski duh. Naša akademija okuplja djecu svih uzrasta i pruža im
+				priliku za igru, razvoj i natjecanje u zdravom sportskom okruženju. Pridruži se i ti –
+				zajedno gradimo budućnost nogometa!
+			</p>
+			<div class="flex justify-center pt-8">
+				<Button>SAZNAJ VISE</Button>
+			</div>
+		</div>
+	</div>
+	<div class="w-full">
+		<img src="https://gnkdinamo.hr/build/images/homepage-school.jpg" alt="Nogometna akademija" />
+	</div>
 </div>

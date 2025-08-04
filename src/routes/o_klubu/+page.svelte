@@ -16,7 +16,7 @@
 	<div class="3xl:px-98 flex w-full flex-col items-start px-4 pt-8 md:px-48">
 		<div class="group flex gap-x-6">
 			<div class="relative">
-				<div class="bg-primary absolute top-0 left-1/2 h-full w-0.5 -translate-x-1/2"></div>
+				<div class="bg-primary/70 absolute top-0 left-1/2 h-full w-0.5 -translate-x-1/2"></div>
 				<span
 					class="relative z-10 grid h-3 w-3 place-items-center rounded-full bg-yellow-400 text-slate-800"
 				></span>

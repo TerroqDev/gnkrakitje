@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { browser } from '$app/environment';
-	import type { NavItems } from '../types/navitems';
-	$: if (browser) document.body.classList.toggle('noscroll', isMenuOpen);
+	import { page } from "$app/stores";
+	import { browser } from "$app/environment";
+	import type { NavItems } from "../types/navitems";
+	$: if (browser) document.body.classList.toggle("noscroll", isMenuOpen);
 	$: href = $page.url.pathname;
 
 	let isMenuOpen = false;
@@ -12,12 +12,12 @@
 	}
 
 	const navItems: NavItems[] = [
-		{ name: 'vijesti', link: 'vijesti' },
-		{ name: 'momcad', link: 'momcad' },
-		{ name: 'o klubu', link: 'o_klubu' },
-		{ name: 'natjecanje', link: 'natjecanje' },
-		{ name: 'akademija', link: 'akademija' },
-		{ name: 'kontakt', link: 'kontakt' }
+		{ name: "vijesti", link: "vijesti" },
+		{ name: "momcad", link: "momcad" },
+		{ name: "o klubu", link: "o_klubu" },
+		{ name: "natjecanje", link: "natjecanje" },
+		{ name: "akademija", link: "akademija" },
+		{ name: "kontakt", link: "kontakt" }
 	];
 </script>
 
@@ -41,7 +41,7 @@
 						<a
 							href="/{item.link}"
 							class={`transition-all duration-300 ease-in hover:text-gray-700 ${
-								href.includes(item.name) ? 'underline' : ''
+								href.includes(item.name) ? "underline" : ""
 							}`}>{item.name}</a
 						>
 					</li>
@@ -51,23 +51,23 @@
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
 			name="Contact call to action"
-			class={`text-textcol relative top-0 right-0 z-50 m-4 flex h-10 w-10 focus:outline-none md:hidden ${isMenuOpen ? 'fixed' : 'fixed'}`}
+			class={`text-textcol relative top-0 right-0 z-50 m-4 flex h-10 w-10 focus:outline-none md:hidden ${isMenuOpen ? "fixed" : "fixed"}`}
 			on:click={toggleMenu}
 		>
 			<div class="absolute top-1/2 left-1/2 w-5 -translate-x-1/2 -translate-y-1/2 transform">
 				<span
 					class={`absolute h-0.5 w-5 transform transition duration-300 ease-in-out ${
-						isMenuOpen ? 'bg-text  rotate-45 delay-200' : 'bg-text -translate-y-1.5'
+						isMenuOpen ? "bg-text  rotate-45 delay-200" : "bg-text -translate-y-1.5"
 					}`}
 				></span>
 				<span
 					class={`bg-text absolute h-0.5 transform transition-all duration-200 ease-in-out ${
-						isMenuOpen ? 'w-0 opacity-50' : 'w-5 opacity-100 delay-200'
+						isMenuOpen ? "w-0 opacity-50" : "w-5 opacity-100 delay-200"
 					}`}
 				></span>
 				<span
 					class={`absolute h-0.5 w-5 transform transition duration-300 ease-in-out ${
-						isMenuOpen ? 'bg-text -rotate-45 delay-200' : 'bg-text translate-y-1.5'
+						isMenuOpen ? "bg-text -rotate-45 delay-200" : "bg-text translate-y-1.5"
 					}`}
 				></span>
 			</div>
@@ -76,7 +76,7 @@
 
 	<nav
 		class={`bg-text bg-opacity-100 fixed top-0 left-0 z-40 flex h-screen w-full transform transition-all delay-100 duration-500 ${
-			isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+			isMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
 		}`}
 	>
 		<ul class="z-50 flex w-5/6 flex-col justify-center text-center align-middle text-gray-50">
