@@ -1,8 +1,8 @@
 import { json } from "@sveltejs/kit";
-import { APIKEY, TEAMID, TOURNAMENTID } from "$env/static/private";
+import { APIKEY, TOURNAMENTID } from "$env/static/private";
 import type { Standings } from "../../../types/standings";
 
-export async function GET(event) {
+export async function GET() {
 	const url = `https://sofascore.p.rapidapi.com/tournaments/get-standings?tournamentId=${TOURNAMENTID}&seasonId=65066&type=total`;
 
 	const options = {

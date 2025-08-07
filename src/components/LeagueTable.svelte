@@ -61,7 +61,7 @@
 				</tr>
 			</thead>
 			<tbody class="pt-8">
-				{#each tableData as tdata, index}
+				{#each tableData as tdata, index (index)}
 					<tr class={`${tdata.name === "GNK Tigar Sveta Nedelja" ? "text-primary" : ""}`}>
 						<td class="px-2">
 							<p class="font-thin">

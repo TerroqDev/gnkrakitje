@@ -101,7 +101,7 @@
 			</div>
 		</div>
 		<ul class="flex flex-col justify-center pt-10 md:gap-2 md:pt-0 md:text-right">
-			{#each navItems as item}
+			{#each navItems as item (item.name)}
 				<li class="font-conthrax text-xs uppercase">
 					<a href="/{item.link}" class="hover:text-gray-100">{item.name}</a>
 				</li>

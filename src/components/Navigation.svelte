@@ -36,7 +36,7 @@
 		</a>
 		<div class="text-text md:text-md z-20 hidden tracking-widest uppercase md:max-[4200px]:block">
 			<ul class="flex h-full">
-				{#each navItems as item}
+				{#each navItems as item (item.name)}
 					<li class="px-2 py-6">
 						<a
 							href="/{item.link}"
@@ -80,7 +80,7 @@
 		}`}
 	>
 		<ul class="z-50 flex w-5/6 flex-col justify-center text-center align-middle text-gray-50">
-			{#each navItems as item}
+			{#each navItems as item (item.name)}
 				<li
 					class="border-primary my-2 flex w-full border-r-6 px-4 py-2 text-2xl font-bold tracking-widest uppercase"
 				>
