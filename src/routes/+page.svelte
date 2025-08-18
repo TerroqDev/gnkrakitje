@@ -18,11 +18,11 @@
 			light: "https://jidelectric.hr/wp-content/uploads/2020/07/jid-logo-v2-200.png",
 			dark: "https://woop14abphufecql.public.blob.vercel-storage.com/gnk/partneri/jid-darkmode.png"
 		},
-        {
-            name: "Texo",
-            light: "https://www.texo.hr/wp-content/uploads/2025/02/texo-logo.png",
-            dark: "https://www.texo.hr/wp-content/uploads/2025/02/texo-logo.png"
-        }
+		{
+			name: "Texo",
+			light: "https://www.texo.hr/wp-content/uploads/2025/02/texo-logo.png",
+			dark: "https://www.texo.hr/wp-content/uploads/2025/02/texo-logo.png"
+		}
 	];
 
 	onMount(async () => {
@@ -136,23 +136,19 @@
 			Partneri
 		</h1>
 		<div class="flex justify-center gap-2 px-4 md:gap-16">
-            {#each sponzorLista as sponzor, index (index) }
-			<div class="flex h-20 w-32 items-center dark:hidden justify-center md:h-40 md:w-64">
-				<img
-					class="max-h-full max-w-full object-contain"
-					src={sponzor.light}
-					alt={sponzor.name}
-				/>
-			</div>
+			{#each sponzorLista as sponzor, index (index)}
+				<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64 dark:hidden">
+					<img
+						class="max-h-full max-w-full object-contain"
+						src={sponzor.light}
+						alt={sponzor.name}
+					/>
+				</div>
 
-			<div class="h-20 w-32 items-center hidden dark:flex justify-center md:h-40 md:w-64">
-				<img
-					class="max-h-full max-w-full object-contain"
-					src={sponzor.dark}
-					alt={sponzor.name}
-				/>
-			</div>
-            {/each}
+				<div class="hidden h-20 w-32 items-center justify-center md:h-40 md:w-64 dark:flex">
+					<img class="max-h-full max-w-full object-contain" src={sponzor.dark} alt={sponzor.name} />
+				</div>
+			{/each}
 		</div>
 	</div>
 	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
@@ -193,7 +189,9 @@
 </div>
 <div class="flex flex-col gap-2 md:flex-row dark:bg-gray-700">
 	<div class="flex w-full flex-col justify-center align-middle md:px-4">
-		<h1 class="font-conthrax px-4 pt-8 md:pt-0 text-2xl text-yellow-300 md:text-3xl">GNK SVETA NEDJELJA</h1>
+		<h1 class="font-conthrax px-4 pt-8 text-2xl text-yellow-300 md:pt-0 md:text-3xl">
+			GNK SVETA NEDJELJA
+		</h1>
 		<h1 class="font-conthrax text-center text-4xl md:text-5xl dark:text-gray-50">AKADEMIJA</h1>
 		<div class="font-roboto px-4 pt-4 text-gray-600 dark:text-gray-100">
 			<p>
