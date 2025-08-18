@@ -12,7 +12,7 @@
 </script>
 
 <div class="3xl:px-98 bg-gray-900 px-4 text-gray-50 md:px-48">
-	<h1 class="font-conthrax pt-8 md:pt-16 text-center text-3xl font-extrabold">SPONZORI</h1>
+	<h1 class="font-conthrax pt-8 text-center text-3xl font-extrabold md:pt-16">SPONZORI</h1>
 	<div class="flex justify-center gap-4 pt-8 pb-8">
 		<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64">
 			<img

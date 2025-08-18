@@ -14,11 +14,55 @@
 </script>
 
 <svelte:head>
-	<title>GNK Tigar Rakitje - Pocetna</title>
+	<title>GNK Tigar Sveta Nedelja - Pocetna</title>
+	<meta name="title" content="GNK Tigar Sveta Nedelja" />
+	<meta
+		name="description"
+		content="GNK Tigar Sveta Nedelja je nogometni klub iz Svete Nedelje, Hrvatska. Pratite vijesti, raspored utakmica, rezultate i obavijesti."
+	/>
+    <link rel="canonical" href="https://gnktigarsvetanedelja.hr/" />
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://gnktigarsvetanedelja.hr/" />
+	<meta property="og:title" content="GNK Tigar Sveta Nedelja" />
+	<meta
+		name="og:description"
+		content="GNK Tigar Sveta Nedelja je nogometni klub iz Svete Nedelje, Hrvatska. Pratite vijesti, raspored utakmica, rezultate i obavijesti."
+	/>
+
+	<meta
+		property="og:image"
+		content="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png"
+	/>
+	<meta property="og:site_name" content="GNK Tigar Sveta Nedelja" />
+	<meta property="og:locale" content="hr_HR" />
+
+	<!-- Twitter / X -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://gnktigarsvetanedelja.hr/" />
+	<meta name="twitter:title" content="GNK Tigar Sveta Nedelja" />
+	<meta name="twitter:image" content="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png" />
+
+	<meta
+		name="twitter:description"
+		content="GNK Tigar Sveta Nedelja je nogometni klub iz Svete Nedelje, Hrvatska. Pratite vijesti, raspored utakmica, rezultate i obavijesti."
+	/>
+
+	<!-- Additional SEO -->
+	<meta
+		name="keywords"
+		content="GNK Tigar Sveta Nedelja, nogometni klub, Croatia, nogomet, Sveta Nedelja, utakmice, rezultati, raspored"
+	/>
+	<meta name="author" content="GNK Tigar Sveta Nedelja" />
+	<meta name="robots" content="index, follow" />
+
+	<!-- Social Media Profiles -->
+	<meta property="og:see_also" content="https://www.facebook.com/gnktigarsvetanedjelja/" />
+	<meta property="og:see_also" content="https://www.instagram.com/gnk_tigar_sveta_nedelja/" />
 </svelte:head>
 
 <div
-	class="font-roboto flex min-h-screen flex-col transition-colors duration-300 ease-in bg-gray-50 dark:bg-gray-800"
+	class="font-roboto flex min-h-screen flex-col transition-colors duration-300 ease-in dark:bg-gray-800"
 >
 	<div class="relative w-full overflow-hidden pb-8 md:pb-16">
 		<div class="absolute inset-0 flex items-center justify-center">
