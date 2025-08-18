@@ -134,7 +134,7 @@
 	<div class="flex w-full flex-col justify-center align-middle md:px-4">
 		<h1 class="font-conthrax px-4 text-2xl text-yellow-300 md:text-3xl">GNK SVETA NEDJELJA</h1>
 		<h1 class="font-conthrax text-center text-4xl md:text-5xl dark:text-gray-50">AKADEMIJA</h1>
-		<div class="font-roboto px-4 pt-4 text-gray-100">
+		<div class="font-roboto px-4 pt-4 text-gray-600 dark:text-gray-100">
 			<p>
 				GNK Sveta Nedjelja ponosno razvija mlade nogometne talente kroz stručno vođene treninge,
 				sportsku disciplinu i timski duh. Naša akademija okuplja djecu svih uzrasta i pruža im
