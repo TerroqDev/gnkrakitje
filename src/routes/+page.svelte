@@ -14,14 +14,16 @@
 </script>
 
 <svelte:head>
-    <title>GNK Tigar Rakitje - Pocetna</title>
+	<title>GNK Tigar Rakitje - Pocetna</title>
 </svelte:head>
 
-<div class="font-roboto flex min-h-screen flex-col dark:bg-gray-800 transition-colors ease-in duration-300">
+<div
+	class="font-roboto flex min-h-screen flex-col transition-colors duration-300 ease-in dark:bg-gray-800"
+>
 	<div class="relative w-full overflow-hidden pb-8 md:pb-16">
 		<div class="absolute inset-0 flex items-center justify-center">
 			<span
-				class="pointer-events-none px-4 text-center dark:text-gray-800/20 text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none"
+				class="pointer-events-none px-4 text-center text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none dark:text-gray-800/20"
 			>
 				GNK TIGAR SVETA NEDJELJA
 			</span>
@@ -29,10 +31,12 @@
 		<div
 			class="font-roboto z-10 flex h-full w-full flex-col justify-center px-4 pt-8 md:px-48 md:pt-16"
 		>
-			<h1 class="w-full text-center text-gray-600 dark:text-gray-100 md:text-lg">
+			<h1 class="w-full text-center text-gray-600 md:text-lg dark:text-gray-100">
 				SuperSport HNL 2024-2025 - <span class="font-bold">31. kolo</span>
 			</h1>
-			<h1 class="text-text dark:text-gray-50 font-conthrax w-full pt-2 text-center text-xl font-bold md:text-3xl">
+			<h1
+				class="text-text font-conthrax w-full pt-2 text-center text-xl font-bold md:text-3xl dark:text-gray-50"
+			>
 				PETAK 01.01.2026. - 21:00
 			</h1>
 			<div class="grid grid-cols-2">
@@ -43,7 +47,9 @@
 						alt="Tigar Rakitje"
 					/>
 					<div>
-						<h2 class="text-text dark:text-gray-50 text-center font-bold md:text-xl">GNK TIGAR SVETA NEDJELJA</h2>
+						<h2 class="text-text text-center font-bold md:text-xl dark:text-gray-50">
+							GNK TIGAR SVETA NEDJELJA
+						</h2>
 					</div>
 				</div>
 				<div class="flex flex-col items-center justify-center">
@@ -52,7 +58,7 @@
 						src="https://dinamo.blob.core.windows.net/dinamo/Repository/2015/8/dinamo_grb_logo_200_200x200.png"
 						alt="Tigar Rakitje"
 					/>
-					<h2 class="text-text dark:text-gray-50 text-center font-bold md:text-xl">GNK DINAMO</h2>
+					<h2 class="text-text text-center font-bold md:text-xl dark:text-gray-50">GNK DINAMO</h2>
 				</div>
 			</div>
 			<div class="z-30 flex justify-center pt-6">
@@ -61,7 +67,9 @@
 		</div>
 	</div>
 	<div class="bg-gray-100 pb-16 md:pb-28 dark:bg-gray-900">
-		<h1 class="font-conthrax pt-8 pb-4 text-center dark:text-gray-50 text-3xl md:pt-16 md:text-4xl">Partneri</h1>
+		<h1 class="font-conthrax pt-8 pb-4 text-center text-3xl md:pt-16 md:text-4xl dark:text-gray-50">
+			Partneri
+		</h1>
 		<div class="flex justify-center gap-2 px-4 md:gap-16">
 			<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64">
 				<img
