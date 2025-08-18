@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div
-	class="font-roboto flex min-h-screen flex-col transition-colors duration-300 ease-in dark:bg-gray-800"
+	class="font-roboto flex min-h-screen flex-col transition-colors duration-300 ease-in bg-gray-50 dark:bg-gray-800"
 >
 	<div class="relative w-full overflow-hidden pb-8 md:pb-16">
 		<div class="absolute inset-0 flex items-center justify-center">
