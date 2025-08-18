@@ -26,8 +26,12 @@
 	];
 
 	onMount(async () => {
-		const data = await fetch("/api/table");
-		leagueData = await data.json();
+        try {
+            const data = await fetch("/api/table");
+            leagueData = await data.json();
+        }catch(err){
+            console.log(err)
+        }
 	});
 </script>
 
@@ -151,15 +155,15 @@
 			{/each}
 		</div>
 	</div>
-	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
-		{#if leagueData}
-			<LeagueTable leagueTableData={leagueData} />
-		{:else}
-			<div class="flex justify-center pt-8">
-				<LoadingSpinner />
-			</div>
-		{/if}
-	</div>
+	<!-- <div class="3xl:px-98 pt-8 md:px-48 md:pt-16"> -->
+	<!-- 	{#if leagueData} -->
+	<!-- 		<LeagueTable leagueTableData={leagueData} /> -->
+	<!-- 	{:else} -->
+	<!-- 		<div class="flex justify-center pt-8"> -->
+	<!-- 			<LoadingSpinner /> -->
+	<!-- 		</div> -->
+	<!-- 	{/if} -->
+	<!-- </div> -->
 	<div class="3xl:px-98 flex flex-col gap-4 px-4 pt-8 pb-8 md:flex-row md:px-48 md:pb-16">
 		<div class="h-full flex-1">
 			<NewsCard
