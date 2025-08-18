@@ -13,11 +13,15 @@
 	});
 </script>
 
-<div class="font-roboto flex min-h-screen flex-col">
+<svelte:head>
+    <title>GNK Tigar Rakitje - Pocetna</title>
+</svelte:head>
+
+<div class="font-roboto flex min-h-screen flex-col dark:bg-gray-800 transition-colors ease-in duration-300">
 	<div class="relative w-full overflow-hidden pb-8 md:pb-16">
 		<div class="absolute inset-0 flex items-center justify-center">
 			<span
-				class="pointer-events-none px-4 text-center text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none"
+				class="pointer-events-none px-4 text-center dark:text-gray-800/20 text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none"
 			>
 				GNK TIGAR SVETA NEDJELJA
 			</span>
@@ -25,21 +29,21 @@
 		<div
 			class="font-roboto z-10 flex h-full w-full flex-col justify-center px-4 pt-8 md:px-48 md:pt-16"
 		>
-			<h1 class="w-full text-center text-gray-600 md:text-lg">
+			<h1 class="w-full text-center text-gray-600 dark:text-gray-100 md:text-lg">
 				SuperSport HNL 2024-2025 - <span class="font-bold">31. kolo</span>
 			</h1>
-			<h1 class="text-text font-conthrax w-full pt-2 text-center text-xl font-bold md:text-3xl">
+			<h1 class="text-text dark:text-gray-50 font-conthrax w-full pt-2 text-center text-xl font-bold md:text-3xl">
 				PETAK 01.01.2026. - 21:00
 			</h1>
 			<div class="grid grid-cols-2">
 				<div class="flex flex-col items-center justify-center">
 					<img
 						class="h-48 w-48"
-						src="https://hns.family/files/images_comet/66/e/66e3062a6966d179ca1ab202bab911c243153e18.jpg"
+						src="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png"
 						alt="Tigar Rakitje"
 					/>
 					<div>
-						<h2 class="text-text text-center font-bold md:text-xl">GNK TIGAR SVETA NEDJELJA</h2>
+						<h2 class="text-text dark:text-gray-50 text-center font-bold md:text-xl">GNK TIGAR SVETA NEDJELJA</h2>
 					</div>
 				</div>
 				<div class="flex flex-col items-center justify-center">
@@ -48,7 +52,7 @@
 						src="https://dinamo.blob.core.windows.net/dinamo/Repository/2015/8/dinamo_grb_logo_200_200x200.png"
 						alt="Tigar Rakitje"
 					/>
-					<h2 class="text-text text-center font-bold md:text-xl">GNK DINAMO</h2>
+					<h2 class="text-text dark:text-gray-50 text-center font-bold md:text-xl">GNK DINAMO</h2>
 				</div>
 			</div>
 			<div class="z-30 flex justify-center pt-6">
@@ -56,8 +60,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="bg-gray-100 pb-16 md:pb-24">
-		<h1 class="font-conthrax pt-8 pb-4 text-center text-3xl md:pt-16 md:text-4xl">Partneri</h1>
+	<div class="bg-gray-100 pb-16 md:pb-28 dark:bg-gray-900">
+		<h1 class="font-conthrax pt-8 pb-4 text-center dark:text-gray-50 text-3xl md:pt-16 md:text-4xl">Partneri</h1>
 		<div class="flex justify-center gap-2 px-4 md:gap-16">
 			<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64">
 				<img
@@ -118,11 +122,11 @@
 		</div>
 	</div>
 </div>
-<div class="flex flex-col gap-2 md:flex-row">
+<div class="flex flex-col gap-2 md:flex-row dark:bg-gray-800">
 	<div class="flex w-full flex-col justify-center align-middle md:px-4">
 		<h1 class="font-conthrax px-4 text-2xl text-yellow-300 md:text-3xl">GNK SVETA NEDJELJA</h1>
-		<h1 class="font-conthrax text-center text-4xl md:text-5xl">AKADEMIJA</h1>
-		<div class="font-roboto px-4 pt-4 text-gray-600">
+		<h1 class="font-conthrax text-center text-4xl md:text-5xl dark:text-gray-50">AKADEMIJA</h1>
+		<div class="font-roboto px-4 pt-4 text-gray-100">
 			<p>
 				GNK Sveta Nedjelja ponosno razvija mlade nogometne talente kroz stručno vođene treninge,
 				sportsku disciplinu i timski duh. Naša akademija okuplja djecu svih uzrasta i pruža im

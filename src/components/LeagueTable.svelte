@@ -18,7 +18,7 @@
 		Sezona 2024./2025.
 	</h1>
 	<div
-		class="relative flex h-full w-full flex-col overflow-scroll bg-gray-800 bg-clip-border py-4 text-gray-100"
+		class="relative flex h-full w-full flex-col overflow-scroll bg-gray-900 bg-clip-border py-4 text-gray-100"
 	>
 		<table class="w-full min-w-max table-auto text-left">
 			<thead>

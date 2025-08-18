@@ -1,15 +1,15 @@
 <script lang="ts">
-import Button from "../../components/Button.svelte";
+	import Button from "../../components/Button.svelte";
 </script>
 
 <div class="3xl:px-98 flex flex-col md:px-48">
-	<h1 class="font-conthrax text-center px-4 pt-8 text-3xl md:pt-16 md:text-5xl">
+	<h1 class="font-conthrax px-4 pt-8 text-center text-3xl md:pt-16 md:text-5xl">
 		Kontaktirajte nas!
 	</h1>
 	<div class="grid w-full grid-cols-1 justify-center pt-8 md:pt-16">
 		<div class="px-4">
 			<form class="font-roboto px-4 py-8 uppercase">
-				<div class="text-center font-conthrax">
+				<div class="font-conthrax text-center">
 					<h1 class="pr-12 text-2xl font-bold text-gray-800">Kontakt</h1>
 					<h1 class="pl-24 text-3xl text-yellow-400">Obrazac</h1>
 				</div>
@@ -25,9 +25,9 @@ import Button from "../../components/Button.svelte";
 					<label class="pl-2 text-xs text-gray-600 uppercase" for="message">Poruka</label>
 					<textarea class="bg-gray-50" id="message" rows="6"></textarea>
 				</div>
-                <div class="flex justify-end pt-4">
-                <Button>Posalji</Button>
-                </div>
+				<div class="flex justify-end pt-4">
+					<Button>Posalji</Button>
+				</div>
 			</form>
 		</div>
 	</div>

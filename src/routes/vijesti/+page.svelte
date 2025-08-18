@@ -2,8 +2,8 @@
 	import NewsCard from "../../components/NewsCard.svelte";
 </script>
 
-<div class="3xl:px-98 flex h-full min-h-svh flex-col px-4 md:px-48">
-	<h1 class="font-conthrax pt-8 text-4xl text-gray-700">VIJESTI</h1>
+<div class="3xl:px-98 flex h-full min-h-svh flex-col px-4 md:px-48 dark:bg-gray-800 transition-colors duration-300 ease-in">
+	<h1 class="font-conthrax pt-8 text-4xl text-gray-700 dark:text-gray-50">VIJESTI</h1>
 	<div class="grid grid-cols-1 gap-4 py-4 md:grid-cols-2">
 		<NewsCard
 			name="GNK Tigar Sveta Nedelja vs NK Bistra"
