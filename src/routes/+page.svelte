@@ -7,6 +7,24 @@
 
 	let leagueData: any = null;
 
+	let sponzorLista = [
+		{
+			name: "Golf Fasade",
+			light: "https://golf-fasade.hr/wp-content/uploads/2022/07/logo-znak.png",
+			dark: "https://woop14abphufecql.public.blob.vercel-storage.com/gnk/partneri/golf-fasade-white-01oBqHyvRx7QQMtVjHVLdiDeplQiCU.png"
+		},
+		{
+			name: "JID Electric",
+			light: "https://jidelectric.hr/wp-content/uploads/2020/07/jid-logo-v2-200.png",
+			dark: "https://woop14abphufecql.public.blob.vercel-storage.com/gnk/partneri/jid-darkmode.png"
+		},
+        {
+            name: "Texo",
+            light: "https://www.texo.hr/wp-content/uploads/2025/02/texo-logo.png",
+            dark: "https://www.texo.hr/wp-content/uploads/2025/02/texo-logo.png"
+        }
+	];
+
 	onMount(async () => {
 		const data = await fetch("/api/table");
 		leagueData = await data.json();
@@ -20,7 +38,7 @@
 		name="description"
 		content="GNK Tigar Sveta Nedelja je nogometni klub iz Svete Nedelje, Hrvatska. Pratite vijesti, raspored utakmica, rezultate i obavijesti."
 	/>
-    <link rel="canonical" href="https://gnktigarsvetanedelja.hr/" />
+	<link rel="canonical" href="https://gnktigarsvetanedelja.hr/" />
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://gnktigarsvetanedelja.hr/" />
@@ -41,7 +59,10 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://gnktigarsvetanedelja.hr/" />
 	<meta name="twitter:title" content="GNK Tigar Sveta Nedelja" />
-	<meta name="twitter:image" content="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png" />
+	<meta
+		name="twitter:image"
+		content="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png"
+	/>
 
 	<meta
 		name="twitter:description"
@@ -115,34 +136,30 @@
 			Partneri
 		</h1>
 		<div class="flex justify-center gap-2 px-4 md:gap-16">
-			<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64">
+            {#each sponzorLista as sponzor, index (index) }
+			<div class="flex h-20 w-32 items-center dark:hidden justify-center md:h-40 md:w-64">
 				<img
 					class="max-h-full max-w-full object-contain"
-					src="https://golf-fasade.hr/wp-content/uploads/2022/07/logo-znak.png"
-					alt="Golf Fasade"
+					src={sponzor.light}
+					alt={sponzor.name}
 				/>
 			</div>
-			<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64">
+
+			<div class="h-20 w-32 items-center hidden dark:flex justify-center md:h-40 md:w-64">
 				<img
 					class="max-h-full max-w-full object-contain"
-					src="https://jidelectric.hr/wp-content/uploads/2020/07/jid-logo-v2-200.png"
-					alt="JID Electric"
+					src={sponzor.dark}
+					alt={sponzor.name}
 				/>
 			</div>
-			<div class="flex h-20 w-32 items-center justify-center md:h-40 md:w-64">
-				<img
-					class="max-h-full max-w-full object-contain"
-					src="https://sz-svn.hr/templates/szsvn21042021/images/logo-493747013.png"
-					alt="Golf Fasade"
-				/>
-			</div>
+            {/each}
 		</div>
 	</div>
 	<div class="3xl:px-98 pt-8 md:px-48 md:pt-16">
 		{#if leagueData}
 			<LeagueTable leagueTableData={leagueData} />
 		{:else}
-			<div class="flex justify-center">
+			<div class="flex justify-center pt-8">
 				<LoadingSpinner />
 			</div>
 		{/if}
@@ -174,9 +191,9 @@
 		</div>
 	</div>
 </div>
-<div class="flex flex-col gap-2 md:flex-row dark:bg-gray-800">
+<div class="flex flex-col gap-2 md:flex-row dark:bg-gray-700">
 	<div class="flex w-full flex-col justify-center align-middle md:px-4">
-		<h1 class="font-conthrax px-4 text-2xl text-yellow-300 md:text-3xl">GNK SVETA NEDJELJA</h1>
+		<h1 class="font-conthrax px-4 pt-8 md:pt-0 text-2xl text-yellow-300 md:text-3xl">GNK SVETA NEDJELJA</h1>
 		<h1 class="font-conthrax text-center text-4xl md:text-5xl dark:text-gray-50">AKADEMIJA</h1>
 		<div class="font-roboto px-4 pt-4 text-gray-600 dark:text-gray-100">
 			<p>

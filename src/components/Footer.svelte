@@ -110,5 +110,5 @@
 	</div>
 </div>
 <div class="bg-gray-800 py-1 text-center text-gray-400">
-	<h1 class="text-xs font-bold">© 2025. GNK TIGAR SVETA NEDJELJA - Sva prava pridrzana, Terroq</h1>
+	<h1 class="text-xs font-bold">© 2025. GNK TIGAR SVETA NEDJELJA - Sva prava pridrzana, <a href="https://terroq.com" target="_blank">Terroq</a></h1>
 </div>
