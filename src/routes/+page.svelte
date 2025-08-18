@@ -39,7 +39,7 @@
 			>
 				PETAK 01.01.2026. - 21:00
 			</h1>
-			<div class="grid grid-cols-2">
+			<div class="grid grid-cols-2 pt-6 md:pt-8">
 				<div class="flex flex-col items-center justify-center">
 					<img
 						class="h-48 w-48"
@@ -146,7 +146,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-full">
+	<div class="w-full pt-8 md:pt-0">
 		<img src="https://gnkdinamo.hr/build/images/homepage-school.jpg" alt="Nogometna akademija" />
 	</div>
 </div>
