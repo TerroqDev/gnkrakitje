@@ -92,7 +92,7 @@
 	<div class="relative w-full overflow-hidden pb-8 md:pb-16">
 		<div class="absolute inset-0 flex items-center justify-center">
 			<span
-				class="pointer-events-none px-4 text-center text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none dark:text-gray-800/20"
+				class="pointer-events-none px-4 text-center text-9xl font-extrabold tracking-widest text-gray-200 opacity-15 select-none dark:text-gray-400/20"
 			>
 				GNK TIGAR SVETA NEDJELJA
 			</span>
