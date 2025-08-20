@@ -56,7 +56,7 @@
 		Kontaktirajte nas!
 	</h1>
 	<div class="grid w-full grid-cols-1 justify-center pt-8 md:pt-16">
-		<div class="px-4 md:px-0">
+		<div class="px-4 dark:bg-gray-900 bg-gray-200 ">
 			<form class="font-roboto py-8 uppercase">
 				<div class="font-conthrax text-center">
 					<h1 class="pr-12 text-2xl font-bold text-gray-800 dark:text-gray-100">Kontakt</h1>
