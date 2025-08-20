@@ -16,7 +16,37 @@
 		{ name: "Drago Prahin", img: "" }
 	];
 </script>
+<svelte:head>
+  <title>O klubu - GNK Tigar Sveta Nedelja</title>
+  <meta name="title" content="O klubu - GNK Tigar Sveta Nedelja" />
+  <meta name="description" content="Saznajte više o povijesti, viziji i ciljevima GNK Tigar Sveta Nedelja. Klub ponosno njeguje tradiciju, zajedništvo i ljubav prema nogometu od 1973. godine." />
+  <link rel="canonical" href="https://gnktigarsvetanedelja.hr/o_klubu" />
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gnktigarsvetanedelja.hr/o-klubu" />
+  <meta property="og:title" content="O klubu - GNK Tigar Sveta Nedelja" />
+  <meta property="og:description" content="Saznajte više o povijesti, viziji i ciljevima GNK Tigar Sveta Nedelja. Klub ponosno njeguje tradiciju, zajedništvo i ljubav prema nogometu od 1973. godine." />
+  <meta property="og:image" content="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png" />
+  <meta property="og:site_name" content="GNK Tigar Sveta Nedelja" />
+  <meta property="og:locale" content="hr_HR" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://gnktigarsvetanedelja.hr/o-klubu" />
+  <meta name="twitter:title" content="O klubu - GNK Tigar Sveta Nedelja" />
+  <meta name="twitter:description" content="GNK Tigar Sveta Nedelja – povijest, tradicija i zajedništvo u nogometu." />
+  <meta name="twitter:image" content="https://woop14abphufecql.public.blob.vercel-storage.com/gnk/gnktigarnobglogo.png" />
+
+  <!-- Additional SEO -->
+  <meta name="keywords" content="GNK Tigar Sveta Nedelja, povijest kluba, nogometni klub, Sveta Nedelja, hrvatski nogomet, nogometna tradicija, uprava kluba" />
+  <meta name="author" content="GNK Tigar Sveta Nedelja" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Social Media Profiles -->
+  <meta property="og:see_also" content="https://www.facebook.com/gnktigarsvetanedjelja/" />
+  <meta property="og:see_also" content="https://www.instagram.com/gnk_tigar_sveta_nedelja/" />
+</svelte:head>
 <div class="flex h-full min-h-svh flex-col bg-gray-50 dark:bg-gray-700">
 	<h1 class="font-conthrax 3xl:px-98 px-4 pt-8 text-4xl text-gray-700 md:px-48 dark:text-gray-50">
 		O klubu
