@@ -42,7 +42,7 @@
 	];
 </script>
 
-<nav class="font-conthrax border-primary border-b bg-gray-50 px-4 md:px-16 dark:bg-gray-800">
+<nav class="font-conthrax border-primary border-b bg-gray-50/25 px-4 md:px-16 dark:bg-gray-800">
 	<div class="flex w-full items-center justify-between">
 		<a
 			href="/"
