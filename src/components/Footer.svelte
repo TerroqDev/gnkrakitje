@@ -3,13 +3,14 @@
 
 	const navItems: NavItems[] = [
 		{ name: "vijesti", link: "vijesti" },
-		{ name: "momcad", link: "momcad" },
+		{ name: "momčad", link: "momcad" },
 		{ name: "o klubu", link: "o_klubu" },
 		{ name: "natjecanje", link: "natjecanje" },
 		{ name: "akademija", link: "akademija" },
 		{ name: "kontakt", link: "kontakt" }
 	];
 	// TODO: Sponzor type
+	// TODO: add static data
 	let sponzorLista = [
 		{
 			name: "Golf Fasade",
@@ -44,7 +45,7 @@
 			<h1
 				class="border-primary font-roboto h-auto w-full border-l-4 py-px pl-1 font-bold uppercase"
 			>
-				Drustvene mreze
+				Društvene mreže
 			</h1>
 			<p class="font-roboto text-sm">
 				Zapratite nas na drustvenim mrezama kako bi vidjeli najnovije vijesti
@@ -109,7 +110,7 @@
 </div>
 <div class="bg-gray-800 py-1 text-center text-gray-400">
 	<h1 class="text-xs font-bold">
-		© 2025. GNK TIGAR SVETA NEDJELJA - Sva prava pridrzana, <a
+		© 2025. GNK TIGAR SVETA NEDJELJA - Sva prava pridržana, <a
 			class="underline"
 			href="https://terroq.com"
 			target="_blank">Terroq</a
