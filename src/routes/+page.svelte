@@ -26,12 +26,12 @@
 	];
 
 	onMount(async () => {
-        try {
-            const data = await fetch("/api/table");
-            leagueData = await data.json();
-        }catch(err){
-            console.log(err)
-        }
+		try {
+			const data = await fetch("/api/table");
+			leagueData = await data.json();
+		} catch (err) {
+			console.log(err);
+		}
 	});
 </script>
 

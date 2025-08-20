@@ -2,20 +2,46 @@
 	import PlayerCard from "../../components/PlayerCard.svelte";
 </script>
 
-<div class="flex h-full min-h-svh flex-col">
-	<h1 class="font-conthrax 3xl:px-98 px-4 pt-8 text-4xl text-gray-700 md:px-48">O klubu</h1>
-	<div class="3xl:px-98 font-roboto px-4 pt-8 text-gray-600 md:px-48 md:text-lg">
+<div class="flex h-full min-h-svh flex-col bg-gray-50 dark:bg-gray-700">
+	<h1 class="font-conthrax 3xl:px-98 px-4 pt-8 text-4xl dark:text-gray-50 text-gray-700 md:px-48">O klubu</h1>
+	<div class="3xl:px-98 font-roboto px-4 pt-8 text-gray-600 dark:text-gray-100 md:px-48 md:text-lg">
 		<p>
-			Nogometni klub Tigar Rakitje osnovan je s ciljem promicanja sporta, zajedništva i zdravog
-			načina života u lokalnoj zajednici. Smješten u mjestu Rakitje, klub okuplja zaljubljenike u
-			nogomet svih uzrasta – od najmlađih kategorija do seniorske momčadi. Kroz godine, NK Tigar
-			Rakitje postao je prepoznatljivo ime u županijskom nogometu, poznat po borbenosti, timskom
-			duhu i predanom radu. Klub aktivno sudjeluje u lokalnim natjecanjima te organizira brojne
-			turnire, kampove i društvene događaje. Osim sportskog razvoja, klub posebnu pažnju posvećuje
-			odgoju mladih igrača, poticanju fair-play vrijednosti i stvaranju pozitivnog okruženja za sve
-			članove. Naši ciljevi su: kontinuirani razvoj mladih talenata, unapređenje infrastrukture te
-			jačanje veza s navijačima i lokalnom zajednicom.
+			GNK Tigar Sveta Nedelja osnovan je s jasnom misijom – okupljati građane, a osobito mlade, koji
+			žele živjeti nogomet i baviti se najpopularnijim sportom na svijetu. Klub pruža priliku za
+			sportski i osobni razvoj, potiče ljubav prema nogometu te doprinosi unapređenju sportskog
+			života u Gradu Sveta Nedelja. Na nogometnoj sceni Klub djeluje u okviru natjecanja pod
+			ingerencijom HNS-a i NSZŽ-a, čuvajući sportski duh i promovirajući vrijednosti zajedništva i
+			fair-playa.
 		</p>
+		<p class="pt-8">
+			Naša povijest i identitet Korijeni Kluba sežu u 1973. godinu kada je osnovan pod imenom NK
+			Sloga Brezje. Godine 2019. ime je promijenjeno u GNK Sveta Nedelja, a nakon ujedinjenja s HNK
+			Tigar Rakitje klub dobiva današnji identitet – GNK Tigar Sveta Nedelja. Današnji naziv odaje
+			počast Gradu u kojem djelujemo i slavnoj 1. gardijskoj brigadi "Tigrovi", osnovanoj upravo u
+			Rakitju.
+		</p>
+		<p class="pt-8">
+			Naša uloga u zajednici GNK Tigar Sveta Nedelja nije samo nogometni klub – on je mjesto
+			okupljanja, druženja i stvaranja prijateljstava. Aktivno sudjelujemo u lokalnim natjecanjima,
+			a s ponosom organiziramo turnire, kampove i društvene događaje koji jačaju zajednicu. Osim
+			sportskog aspekta, posebnu pažnju posvećujemo odgoju mladih igrača, razvijanju discipline i
+			timskog duha, ali i njegovanju vrijednosti poštene igre i međusobnog poštovanja.
+		</p>
+        <h1 class="pt-16 font-conthrax text-xl">Naša vizija i ciljevi</h1>
+        <p class="pt-8">
+Naša ambicija je jasna – gradimo klub koji će biti prepoznat po kvaliteti, zajedništvu i strasti prema nogometu:
+        </p>
+        <ul class="flex flex-col list-disc py-4">
+            <li>Kontinuirani razvoj mladih talenata – jer oni su budućnost našeg kluba i hrvatskog nogometa.</li>
+            <li>Unapređenje infrastrukture i stvaranje uvjeta dostojnih profesionalnog rasta.</li>
+            <li>Jačanje povezanosti s navijačima i lokalnom zajednicom, jer bez njih klub nema dušu.</li>
+            <li>Pozicioniranje kao centar izvrsnosti za nogomet na zapadnom dijelu Zagrebačke županije i grada Zagreba.</li>
+            <li>Postati drugi najbolje plasirani nogometni klub u Zagrebačkoj županiji – s ambicijom stalnog napretka.</li>
+            <li>Razviti vlastiti sustav samoodrživosti koji će omogućiti stabilnost i dugoročan rast.</li>
+        </ul>
+        <p class="font-bold pt-8">
+GNK Tigar Sveta Nedelja danas je mnogo više od sportskog kolektiva – on je simbol ponosa, tradicije i zajedništva, mjesto gdje nogomet postaje način života.
+        </p>
 	</div>
 	<div class="3xl:px-98 flex w-full flex-col items-start px-4 pt-4 md:px-48">
 		<div class="">
@@ -29,22 +55,19 @@
 				>
 					<time
 						class="bg-primary left-0 mb-3 inline-flex h-6 w-20 translate-y-0.5 items-center justify-center rounded-full text-xs font-semibold text-gray-600 uppercase sm:absolute sm:mb-0"
-						>2001</time
+						>1973</time
 					>
-					<div class="text-xl font-bold text-gray-600">Osnovan NK Rakitje</div>
+					<div class="text-xl font-bold text-gray-600 dark:text-gray-50">Osnivanje NK Sloga Brezje</div>
 				</div>
 				<!-- Content -->
-				<div class="text-gray-600">
-					Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu
-					neque aliquam vestibulum morbi blandit cursus risus.
-				</div>
+				<div class="text-gray-600 dark:text-gray-100"></div>
 			</div>
 
 			<!-- Item #2 -->
 			<div class="group relative py-6 pl-8 sm:pl-32">
 				<!-- Purple label -->
 				<div class="font-caveat mb-1 text-2xl font-medium text-yellow-400 sm:mb-0">
-					Prva zupanijska liga
+					Prva zupanijska liga 
 				</div>
 				<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
 				<div
@@ -52,7 +75,7 @@
 				>
 					<time
 						class="bg-primary left-0 mb-3 inline-flex h-6 w-20 translate-y-0.5 items-center justify-center rounded-full text-xs font-semibold text-gray-600 uppercase sm:absolute sm:mb-0"
-						>2022</time
+						>2017</time
 					>
 					<div class="text-xl font-bold text-gray-600">Sezona 2022/2023.</div>
 				</div>
