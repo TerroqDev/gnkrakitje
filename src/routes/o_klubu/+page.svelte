@@ -67,10 +67,10 @@
 	<meta property="og:see_also" content="https://www.instagram.com/gnk_tigar_sveta_nedelja/" />
 </svelte:head>
 <div class="flex h-full min-h-svh flex-col bg-gray-50 dark:bg-gray-700">
-	<h1 class="font-conthrax 3xl:px-98 px-4 pt-8 text-4xl text-gray-700 md:px-48 dark:text-gray-50">
+	<h1 class="font-conthrax 3xl:px-98 bg-white dark:bg-gray-800 px-4 pt-8 text-4xl text-gray-700 md:px-48 dark:text-gray-50">
 		O klubu
 	</h1>
-	<div class="3xl:px-98 font-roboto px-4 pt-8 text-gray-600 md:px-48 md:text-lg dark:text-gray-100">
+	<div class="3xl:px-98 font-roboto bg-white dark:bg-gray-800 px-4 pt-8 text-gray-600 md:px-48 md:text-lg dark:text-gray-100">
 		<p>
 			GNK Tigar Sveta Nedelja osnovan je s jasnom misijom – okupljati građane, a osobito mlade, koji
 			žele živjeti nogomet i baviti se najpopularnijim sportom na svijetu. Klub pruža priliku za
@@ -114,7 +114,7 @@
 			</li>
 			<li>Razviti vlastiti sustav samoodrživosti koji će omogućiti stabilnost i dugoročan rast.</li>
 		</ul>
-		<p class="pt-8 font-bold">
+		<p class="pt-8 font-bold pb-8">
 			GNK Tigar Sveta Nedelja danas je mnogo više od sportskog kolektiva – on je simbol ponosa,
 			tradicije i zajedništva, mjesto gdje nogomet postaje način života.
 		</p>
@@ -198,10 +198,10 @@
 				>
 					<time
 						class="bg-primary left-0 mb-3 inline-flex h-6 w-20 translate-y-0.5 items-center justify-center rounded-full text-xs font-semibold text-gray-600 uppercase sm:absolute sm:mb-0"
-						>2020</time
+						>2021</time
 					>
 					<div class="text-xl font-bold text-gray-600 dark:text-gray-50">
-						Osvajanje I ŽNL-e ZAPAD
+						Osvajanje I JŽNL
 					</div>
 				</div>
 				<!-- Content -->
@@ -269,7 +269,9 @@
 			</div>
 		</div>
 
-		<div class="w-full py-8">
+	</div>
+
+		<div class="w-full bg-white dark:bg-gray-800 py-8 3xl:px-98 md:px-48 px-4">
 			<h1 class="font-conthrax text-3xl text-gray-700 dark:text-gray-50">Clanovi uprave</h1>
 			<div class="flex w-full flex-col pt-8">
 				<h2
@@ -313,5 +315,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
