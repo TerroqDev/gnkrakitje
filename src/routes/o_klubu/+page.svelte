@@ -67,10 +67,14 @@
 	<meta property="og:see_also" content="https://www.instagram.com/gnk_tigar_sveta_nedelja/" />
 </svelte:head>
 <div class="flex h-full min-h-svh flex-col bg-gray-50 dark:bg-gray-700">
-	<h1 class="font-conthrax 3xl:px-98 bg-white dark:bg-gray-800 px-4 pt-8 text-4xl text-gray-700 md:px-48 dark:text-gray-50">
+	<h1
+		class="font-conthrax 3xl:px-98 bg-white px-4 pt-8 text-4xl text-gray-700 md:px-48 dark:bg-gray-800 dark:text-gray-50"
+	>
 		O klubu
 	</h1>
-	<div class="3xl:px-98 font-roboto bg-white dark:bg-gray-800 px-4 pt-8 text-gray-600 md:px-48 md:text-lg dark:text-gray-100">
+	<div
+		class="3xl:px-98 font-roboto bg-white px-4 pt-8 text-gray-600 md:px-48 md:text-lg dark:bg-gray-800 dark:text-gray-100"
+	>
 		<p>
 			GNK Tigar Sveta Nedelja osnovan je s jasnom misijom – okupljati građane, a osobito mlade, koji
 			žele živjeti nogomet i baviti se najpopularnijim sportom na svijetu. Klub pruža priliku za
@@ -114,7 +118,7 @@
 			</li>
 			<li>Razviti vlastiti sustav samoodrživosti koji će omogućiti stabilnost i dugoročan rast.</li>
 		</ul>
-		<p class="pt-8 font-bold pb-8">
+		<p class="pt-8 pb-8 font-bold">
 			GNK Tigar Sveta Nedelja danas je mnogo više od sportskog kolektiva – on je simbol ponosa,
 			tradicije i zajedništva, mjesto gdje nogomet postaje način života.
 		</p>
@@ -200,9 +204,7 @@
 						class="bg-primary left-0 mb-3 inline-flex h-6 w-20 translate-y-0.5 items-center justify-center rounded-full text-xs font-semibold text-gray-600 uppercase sm:absolute sm:mb-0"
 						>2021</time
 					>
-					<div class="text-xl font-bold text-gray-600 dark:text-gray-50">
-						Osvajanje I JŽNL
-					</div>
+					<div class="text-xl font-bold text-gray-600 dark:text-gray-50">Osvajanje I JŽNL</div>
 				</div>
 				<!-- Content -->
 				<div class="text-gray-500 dark:text-gray-100"></div>
@@ -268,51 +270,50 @@
 				<div class="text-gray-500 dark:text-gray-100"></div>
 			</div>
 		</div>
-
 	</div>
 
-		<div class="w-full bg-white dark:bg-gray-800 py-8 3xl:px-98 md:px-48 px-4">
-			<h1 class="font-conthrax text-3xl text-gray-700 dark:text-gray-50">Clanovi uprave</h1>
-			<div class="flex w-full flex-col pt-8">
-				<h2
-					class="font-roboto border-primary border-l-4 pl-2 text-2xl font-semibold text-gray-700 dark:text-gray-100"
-				>
-					Predsjednik
-				</h2>
-				<div class="flex w-full justify-center pt-8">
-					<PlayerCard
-						name="Matej Vrdoljak"
-						imageUrl="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fapi.zapadno.hr%2Fmedia%2Fmatej-vrdoljak.jpeg&f=1&nofb=1&ipt=58c0ccdb98fa26f0d411b5d4a2e06d8bd895d96bdab8fd38bfe2d9f9608c30fe"
-					/>
-				</div>
-				<div class="mx-2 my-8 h-0.5 w-full bg-gray-50"></div>
-				<h2
-					class="font-roboto border-primary border-l-4 pl-2 text-2xl font-semibold text-gray-700 dark:text-gray-100"
-				>
-					Dopredsjednici
-				</h2>
-				<div class="flex w-full justify-center gap-4 pt-8">
-					{#each doPredsjednici as doPredsjednik, index (index)}
-						<PlayerCard name={doPredsjednik.name} imageUrl={doPredsjednik.img} />
-					{/each}
-				</div>
+	<div class="3xl:px-98 w-full bg-white px-4 py-8 md:px-48 dark:bg-gray-800">
+		<h1 class="font-conthrax text-3xl text-gray-700 dark:text-gray-50">Clanovi uprave</h1>
+		<div class="flex w-full flex-col pt-8">
+			<h2
+				class="font-roboto border-primary border-l-4 pl-2 text-2xl font-semibold text-gray-700 dark:text-gray-100"
+			>
+				Predsjednik
+			</h2>
+			<div class="flex w-full justify-center pt-8">
+				<PlayerCard
+					name="Matej Vrdoljak"
+					imageUrl="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fapi.zapadno.hr%2Fmedia%2Fmatej-vrdoljak.jpeg&f=1&nofb=1&ipt=58c0ccdb98fa26f0d411b5d4a2e06d8bd895d96bdab8fd38bfe2d9f9608c30fe"
+				/>
+			</div>
+			<div class="mx-2 my-8 h-0.5 w-full bg-gray-50"></div>
+			<h2
+				class="font-roboto border-primary border-l-4 pl-2 text-2xl font-semibold text-gray-700 dark:text-gray-100"
+			>
+				Dopredsjednici
+			</h2>
+			<div class="flex w-full justify-center gap-4 pt-8">
+				{#each doPredsjednici as doPredsjednik, index (index)}
+					<PlayerCard name={doPredsjednik.name} imageUrl={doPredsjednik.img} />
+				{/each}
+			</div>
 
-				<div class="mx-2 my-8 h-0.5 w-full bg-gray-50"></div>
+			<div class="mx-2 my-8 h-0.5 w-full bg-gray-50"></div>
 
-				<h2
-					class="font-roboto border-primary border-l-4 pl-2 text-2xl font-semibold text-gray-700 dark:text-gray-50"
-				>
-					Izvršni odbor
-				</h2>
-				<div
-					class="grid w-full grid-cols-1 place-items-center items-center justify-center gap-4 pt-4 md:grid-cols-3"
-				>
-					{#each izvrsniOdbor as izvrsni, index (index)}
-						<div class="pt-8">
-							<PlayerCard name={izvrsni.name} imageUrl={izvrsni.img} />
-						</div>
-					{/each}
-				</div>
+			<h2
+				class="font-roboto border-primary border-l-4 pl-2 text-2xl font-semibold text-gray-700 dark:text-gray-50"
+			>
+				Izvršni odbor
+			</h2>
+			<div
+				class="grid w-full grid-cols-1 place-items-center items-center justify-center gap-4 pt-4 md:grid-cols-3"
+			>
+				{#each izvrsniOdbor as izvrsni, index (index)}
+					<div class="pt-8">
+						<PlayerCard name={izvrsni.name} imageUrl={izvrsni.img} />
+					</div>
+				{/each}
 			</div>
 		</div>
+	</div>
 </div>
